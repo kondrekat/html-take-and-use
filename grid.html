@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container {
+            display: -ms-grid;
+            display: grid;
+            margin: 0;
+            height: 100vh;
+            -ms-grid-columns: auto 1fr 0;
+            -ms-grid-rows: 100px 1fr 100px;
+            grid-template-columns: auto 1fr 0;
+            grid-template-rows: 100px 1fr 100px;
+            height: 100%;
+        }
+
+        .container > div {
+            padding: 20px;
+        }
+
+        .content {
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 1; 
+            -ms-grid-row: 2;
+            background: #b4bfbf;
+        }
+
+        .aside {
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1; 
+            -ms-grid-row: 2;
+            background: #dbd5c5;
+        }
+        
+        .header,
+        .footer {
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 4; 
+            -ms-grid-row: 1;
+            grid-column: 1 / 4;
+            background: #798e93;
+        }
+
+        .footer {
+            -ms-grid-row: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="aside">ASIDE</div>
+        <div class="content">CONTENT</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+
+</html>
